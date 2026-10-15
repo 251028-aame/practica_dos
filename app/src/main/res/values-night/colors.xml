@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="primarioGVA">#86C3E0</color>
+        <color name="acentoGVA">#F2A104</color>
+        <color name="fondoGVA">#15202B</color>
+        <color name="textoGVA">#F4F6F7</color>
+        <color name="textoBotonGVA">#15202B</color>
+</resources>

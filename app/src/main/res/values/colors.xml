@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores por defecto del proyecto (puedes dejarlos) -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Mi paleta: D = 5 (Sustituye por tus colores y iniciales) -->
+    <color name="primarioGVA">#1F5673</color>
+    <color name="acentoGVA">#F2A104</color>
+    <color name="fondoGVA">#F4F6F7</color>
+    <color name="textoGVA">#15202B</color>
+    <color name="textoBotonGVA">#FFFFFF</color>
+</resources>
