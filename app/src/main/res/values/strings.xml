@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">practicados</string>
     <!-- Textos de la interfaz -->
-    <string name="msg_inicialGVA">Escribe tus datos para registrarte</string>
-    <string name="hint_nombreGVA">Ingresa tu nombre</string>
-    <string name="hint_matriculaGVA">Ingresa tu matricula</string>
-    <string name="btn_registrarGVA">Registrar</string>
-    <string name="btn_registrar_otroGVA">Registrar otro</string>
-    <string name="btn_limpiarGVA">Limpiar</string>
-    <string name="btn_tema_oscuroGVA">Modo oscuro</string>
-    <string name="btn_tema_claroGVA">Modo claro</string>
+    <string name="msg_inicialAAME">Escribe tus datos para registrarte</string>
+    <string name="hint_nombreAAME">Ingresa tu nombre</string>
+    <string name="hint_matriculaAAME">Ingresa tu matricula</string>
+    <string name="btn_registrarAAME">Registrar</string>
+    <string name="btn_registrar_otroAAME">Registrar otro</string>
+    <string name="btn_limpiarAAME">Limpiar</string>
+    <string name="btn_tema_oscuroAAME">Modo oscuro</string>
+    <string name="btn_tema_claroAAME">Modo claro</string>
 
     <!-- Mensajes de validacion -->
-    <string name="val_nombre_vacioGVA">Escribe tu nombre</string>
-    <string name="val_nombre_cortoGVA">El nombre es demasiado corto</string>
-    <string name="val_matricula_vaciaGVA">Escribe tu matricula</string>
-    <string name="val_matricula_largoGVA">La matricula debe tener 7 digitos</string>
-    <string name="msg_registradoGVA">Registrado: %1$s (%2$s)\nAsistente numero %3$d</string>
+    <string name="val_nombre_vacioAAME">Escribe tu nombre</string>
+    <string name="val_nombre_cortoAAME">El nombre es demasiado corto</string>
+    <string name="val_matricula_vaciaAAME">Escribe tu matricula</string>
+    <string name="val_matricula_largoAAME">La matricula debe tener 7 digitos</string>
+    <string name="msg_registradoAAME">Registrado: %1$s (%2$s)\nAsistente numero %3$d</string>
 </resources>

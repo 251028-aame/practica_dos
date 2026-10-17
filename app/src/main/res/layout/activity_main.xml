@@ -6,84 +6,83 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondoGVA"
+    android:background="@color/fondoAAME"
     tools:context=".MainActivity">
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="261dp"
-        android:layout_height="222dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvMensaje"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41"
-        app:srcCompat="@drawable/imagen_logo" />
 
     <TextView
         android:id="@+id/tvMensaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/msg_inicialGVA"
-        android:textColor="@color/textoGVA"
+        android:text="@string/msg_inicialAAME"
+        android:textColor="@color/textoAAME"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/etxNombre"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etxNombre"
         style="@style/CampoGVA"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_nombreGVA"
+        android:layout_width="387dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="28dp"
+        android:hint="@string/hint_nombreAAME"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/etxMatricula"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etxMatricula"
         style="@style/CampoGVA"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_matriculaGVA"
+        android:layout_width="386dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/hint_matriculaAAME"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRegistrar"
         style="@style/BotonGVA"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_registrarGVA"
-        app:layout_constraintBottom_toTopOf="@+id/btnLimpiar"
+        android:layout_width="125dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="192dp"
+        android:text="@string/btn_registrarAAME"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnLimpiar"
         style="@style/BotonGVA"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_limpiarGVA"
+        android:layout_width="119dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/btn_limpiarAAME"
         app:layout_constraintBottom_toTopOf="@+id/btnTema"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnTema"
         style="@style/BotonGVA"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_tema_oscuroGVA"
+        android:layout_width="417dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/btn_tema_oscuroAAME"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="32dp" />
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
         android:id="@+id/pbCarga"
@@ -95,5 +94,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="255dp"
+        android:layout_height="296dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

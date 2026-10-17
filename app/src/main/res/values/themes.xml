@@ -10,8 +10,8 @@
     <style name="BotonGVA">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:backgroundTint">@color/primarioGVA</item>
-        <item name="android:textColor">@color/textoBotonGVA</item>
+        <item name="android:backgroundTint">@color/primarioAAME</item>
+        <item name="android:textColor">@color/textoBotonAAME</item>
         <item name="android:textSize">16sp</item>
         <item name="android:layout_marginTop">12dp</item>
     </style>
@@ -19,7 +19,7 @@
     <!-- Estilo para mis cuadros de texto -->
 
     <style name="CampoGVA" parent="Widget.AppCompat.EditText">
-        <item name="android:textColor">@color/textoGVA</item>
+        <item name="android:textColor">@color/textoAAME</item>
         <item name="android:textSize">16sp</item>
         <item name="android:padding">10dp</item>
     </style>

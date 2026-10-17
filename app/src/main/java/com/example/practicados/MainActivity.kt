@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etxMatricula: EditText
     private lateinit var btnRegistrar: Button
     private lateinit var btnLimpiar: Button
-    private lateinit var btnTemaGVA: Button
+    private lateinit var btnTemaAAME: Button
     private lateinit var pbCarga: ProgressBar
     private lateinit var tvMensaje: TextView
 
-    private var oscuroGVA = false
-    private var contadorAsistentes = 0 // Contador para las asistencias
+    private var oscuroAAME = false
+    private var contadorAsistentes = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         etxMatricula = findViewById(R.id.etxMatricula)
         btnRegistrar = findViewById(R.id.btnRegistrar)
         btnLimpiar = findViewById(R.id.btnLimpiar)
-        btnTemaGVA = findViewById(R.id.btnTema)
+        btnTemaAAME = findViewById(R.id.btnTema)
         pbCarga = findViewById(R.id.pbCarga)
 
         pbCarga.visibility = View.GONE
@@ -52,12 +52,12 @@ class MainActivity : AppCompatActivity() {
         // Listeners de los botones
         btnRegistrar.setOnClickListener { registrarOpcion() }
         btnLimpiar.setOnClickListener { limpiar() }
-        btnTemaGVA.setOnClickListener { cambiarTemaGVA() }
+        btnTemaAAME.setOnClickListener { cambiarTemaAAME() }
     }
 
     private fun registrarOpcion() {
-        // Si el botón dice "Registrar otro", lo regresamos al estado inicial
-        if (btnRegistrar.text.toString() == getString(R.string.btn_registrar_otroGVA)) {
+
+        if (btnRegistrar.text.toString() == getString(R.string.btn_registrar_otroAAME)) {
             limpiar()
             return
         }
@@ -65,20 +65,20 @@ class MainActivity : AppCompatActivity() {
         val nombre = etxNombre.text.toString().trim()
         val matricula = etxMatricula.text.toString().trim()
 
-        // 7.1 · Textos de validación sacados a strings.xml
+
         if (nombre.isEmpty()) {
-            Toast.makeText(this, getString(R.string.val_nombre_vacioGVA), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.val_nombre_vacioAAME), Toast.LENGTH_SHORT).show()
             return
         } else if (nombre.length < 3) {
-            Toast.makeText(this, getString(R.string.val_nombre_cortoGVA), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.val_nombre_cortoAAME), Toast.LENGTH_SHORT).show()
             return
         }
 
         if (matricula.isEmpty()) {
-            Toast.makeText(this, getString(R.string.val_matricula_vaciaGVA), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.val_matricula_vaciaAAME), Toast.LENGTH_SHORT).show()
             return
         } else if (matricula.length != 7) {
-            Toast.makeText(this, getString(R.string.val_matricula_largoGVA), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.val_matricula_largoAAME), Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -89,13 +89,13 @@ class MainActivity : AppCompatActivity() {
         // Simulamos el registro exitoso
         contadorAsistentes++
 
-        // 7.3 y Punto Extra: Uso de strings con marcadores de posición para el mensaje de éxito
-        tvMensaje.text = getString(R.string.msg_registradoGVA, nombre, matricula, contadorAsistentes)
+
+        tvMensaje.text = getString(R.string.msg_registradoAAME, nombre, matricula, contadorAsistentes)
         tvMensaje.visibility = View.VISIBLE
         pbCarga.visibility = View.GONE
 
         // Cambiamos el texto del botón a "Registrar otro"
-        btnRegistrar.text = getString(R.string.btn_registrar_otroGVA)
+        btnRegistrar.text = getString(R.string.btn_registrar_otroAAME)
         btnRegistrar.isEnabled = true
 
         etxNombre.isEnabled = false
@@ -109,25 +109,24 @@ class MainActivity : AppCompatActivity() {
         etxNombre.isEnabled = true
         etxMatricula.isEnabled = true
 
-        // 7.2 · Textos de limpiar sacados a strings.xml
-        tvMensaje.text = getString(R.string.msg_inicialGVA)
+        tvMensaje.text = getString(R.string.msg_inicialAAME)
         tvMensaje.visibility = View.VISIBLE
-        btnRegistrar.text = getString(R.string.btn_registrarGVA)
+        btnRegistrar.text = getString(R.string.btn_registrarAAME)
 
         pbCarga.visibility = View.GONE
         btnRegistrar.isEnabled = true
         etxNombre.requestFocus()
     }
 
-    private fun cambiarTemaGVA() {
-        oscuroGVA = !oscuroGVA
+    private fun cambiarTemaAAME() {
+        oscuroAAME = !oscuroAAME
 
-        if (oscuroGVA) {
+        if (oscuroAAME) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            btnTemaGVA.text = getString(R.string.btn_tema_claroGVA)
+            btnTemaAAME.text = getString(R.string.btn_tema_claroAAME)
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            btnTemaGVA.text = getString(R.string.btn_tema_oscuroGVA)
+            btnTemaAAME.text = getString(R.string.btn_tema_oscuroAAME)
         }
     }
 }

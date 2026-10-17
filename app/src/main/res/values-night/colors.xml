@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        <color name="primarioGVA">#86C3E0</color>
-        <color name="acentoGVA">#F2A104</color>
-        <color name="fondoGVA">#15202B</color>
-        <color name="textoGVA">#F4F6F7</color>
-        <color name="textoBotonGVA">#15202B</color>
+        <!-- Colores por defecto del proyecto -->
+        <color name="black">#4A235A</color>
+        <color name="white">#BC94CC</color>
+
+        <!-- Mi paleta para Modo Oscuro: D = 8 -->
+        <color name="primarioAAME">#9DB5C9</color>
+        <color name="acentoAAME">#F08A7A</color>
+        <color name="fondoAAME">#15202B</color>
+        <color name="textoAAME">#F4F6F7</color>
+        <color name="textoBotonAAME">#152028</color>
 </resources>
